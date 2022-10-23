@@ -1,3 +1,3 @@
-# gluon-ffkbu-files
+# gluon-special-packages 
 
-Paket um einige geänderte Dateien für die Hoods in FFKBU miteinzubauen.
+In diesem Repo sind einige spezielle Pakete für die den FFKBU Flavour von Gluon
