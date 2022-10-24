@@ -1,43 +1,35 @@
-    —————   		|| //   || _ \\  | | | |   	 /\    /\	    
-u   \ |  \  u   	||//    || _ //  | |_| |  	|  |  |  | 	    
-u    \| _/  u   	|| \\   ||___//   \___/ 	|  |  |  | 	    
-u    /|  \  u 						|  |__|  | ______   
- u  / |__/ u			Freifunk		|  |  |  | 	 \  
-  uuuuuuuuu   		Köln - Bonn - Umland		|  |__|  | _____ |  
-
-----------------------------------------------------------------------------
- WARNING : Unauthorized access to this system is forbidden and will be
- prosecuted by law. By accessing this system, you agree that your actions
- may be monitored if unauthorized usage is suspected.
- ----------------------------------------------------------------------------
- 
- Befehle:
- 	Hood wechseln			//  gluon-switch-domain ffkbu_hood_bonn
-					//  gluon-switch-domain ffkbu_hood_umland
-	
- 	Neustart im Konfig-Modus  	//  uci set gluon-setup-mode.@setup_mode[0].enabled=1 
-					//  uci commit gluon-setup-mode 
- 					//  reboot
- 	  oder	//uci set gluon-setup-mode.@setup_mode[0].enabled=1;uci commit gluon-setup-mode;reboot
- 
- 	Sauberes Upgrade		//  sysupgrade -n firmware.bin
-	Interaktives Upgrade		//  sysupgrade -i firmware.bin
-	
-	Hostnamen ändern		//  uci set system.@system[0].pretty_hostname='Musterstadt Musterweg'
-					//  uci set system.@system[0].hostname='Musterstadt_Musterweg'
-					//  uci commit system 
-					//  reboot
-										
-	Passwort ändern			//  passwd
-		
- 
-        batctl cl 			// alle Claims announced for the mesh
-        batctl -m bat0 o 		// batman-adv nachbarn anzeigen
-        ip a s                          // alle IPs anzeigen
-        brctl show                      // alle bridges anzeigen
-	autoupdater -f                  // Firmware-Update erzwingen
-	udhcpc -i br-client -q -S -n    // IPv4 Adresse für den Router setzen
-
-
-	Mehr auf https://kbu.freifunk.net/wiki/index.php?title=Pimp_my_Node 
+    _____       || //  || _ \\  | | | |       
+ u  \ |  \  u   ||//   || _ //  | |_| | 
+ u   \| _/  u   || \\  ||___//   \___/    ^   ^
+ u   /|  \  u                            | | | | 
+  u / |__/ u           Freifunk          | |_| | ___ 
+   uuuuuuuu      Koeln - Bonn - Umland   | |_| | ___ |
+ ----------------------------------------------------- 
+ WARNING : Unauthorized access to this system is 
+ forbidden and will be prosecuted by law. 
+ By accessing this system, you agree that your actions
+ may be  monitored if unauthorized usage is suspected.
+ -----------------------------------------------------
+ ** Befehle:
+ Verzeichnis (ls -l)  : ll
+ Hood wechseln : gluon-switch-domain ffkbu_hood_bonn
+               : gluon-switch-domain ffkbu_hood_umland
+ Neustart im Konfig-Modus
+ : uci set gluon-setup-mode.@setup_mode[0].enabled=1 
+ : uci commit gluon-setup-mode 
+ : reboot
+ Sauberes Upgrade     :  sysupgrade -n firmware.bin
+ autoupdater -f   // Firmware-Update erzwingen 
+ Hostnamen aendern        
+ : uci set system.@system[0].hostname='Koeln-Beuel_2'
+ : uci commit system 
+ : reboot
+ Passwort aendern //  passwd
+ batctl cl        // alle Claims announced for the mesh
+ batctl -m bat0 o // batman-adv nachbarn anzeigen
+ ip a s           // alle IPs anzeigen
+ brctl show       // alle bridges anzeigen
+    
+Mehr auf 
+https://kbu.freifunk.net/wiki/index.php?title=Pimp_my_Node 
 
