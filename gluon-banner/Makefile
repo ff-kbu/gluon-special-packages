@@ -55,7 +55,7 @@ define Package/gluon-banner/postinst
 cd "$${IPKG_INSTROOT}/etc/"
 [ -h "./banner" ] && /bin/rm -f "./banner"
 /bin/ln -s "./banner.gluon" "./banner"
-[ -h "./profile" ] && /bin/rm -f "./profile"
+/bin/rm -f "./profile"
 chmod +x ./profile.gluon
 /bin/ln -s "./profile.gluon" "./profile"
 chmod +x ./profile
