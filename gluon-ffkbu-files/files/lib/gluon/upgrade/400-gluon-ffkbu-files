@@ -36,6 +36,8 @@ domain=$(uci get gluon.core.domain)
 
   esac
 
-
+#Dienste, welche wir bei FF KBU nicht verwenden
  /etc/init.d/gluon-radvd disable
  /etc/init.d/gluon-radvd stop
+/etc/init.d/firewall disable
+/etc/init.d/firewall stop
