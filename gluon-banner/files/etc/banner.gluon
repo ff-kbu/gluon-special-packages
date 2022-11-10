@@ -28,7 +28,7 @@
  batctl cl        // alle Claims announced for the mesh
  batctl -m bat0 o // batman-adv nachbarn anzeigen
  ip a s           // alle IPs anzeigen
- brctl show       // alle bridges anzeigen
+ gluon-info       // Hard und Software Infos
     
 Mehr auf 
 https://kbu.freifunk.net/wiki/index.php?title=Pimp_my_Node
