@@ -26,6 +26,7 @@ domain=$(uci get gluon.core.domain)
                 grep -vwE "(umland1|umland2|umland3|umland4|umland5|umland6|umland7)" /etc/hosts > /tmp/hosts.sik
                 mv /tmp/hosts.sik /etc/hosts
                 echo "157.90.178.17   umland1.kbu.freifunk.net" >> /etc/hosts
+		echo "81.173.204.217  umland2.kbu.freifunk.net" >> /etc/hosts
                 ;;
         ffkbu_hood_koeln)
                 #erstmal die alten Eintraege raus....
