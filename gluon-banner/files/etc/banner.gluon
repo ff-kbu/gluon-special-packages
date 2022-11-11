@@ -12,12 +12,7 @@
  -----------------------------------------------------
  ** Befehle:
  Verzeichnis (ls -l)  : ll
- Hood wechseln : gluon-switch-domain ffkbu_hood_bonn
-               : gluon-switch-domain ffkbu_hood_umland
- Neustart im Konfig-Modus
- : uci set gluon-setup-mode.@setup_mode[0].enabled=1 
- : uci commit gluon-setup-mode 
- : reboot
+
  Sauberes Upgrade     :  sysupgrade -n firmware.bin
  autoupdater -f   // Firmware-Update erzwingen 
  Hostnamen aendern        
@@ -28,7 +23,11 @@
  batctl cl        // alle Claims announced for the mesh
  batctl -m bat0 o // batman-adv nachbarn anzeigen
  ip a s           // alle IPs anzeigen
+ 
  gluon-info       // Hard und Software Infos
+ gluon-enter-setup-mode //  Neustart im Konfig-Modus
+ Hood wechseln : gluon-switch-domain ffkbu_hood_bonn
+               : gluon-switch-domain ffkbu_hood_umland
     
 Mehr auf 
 https://kbu.freifunk.net/wiki/index.php?title=Pimp_my_Node
