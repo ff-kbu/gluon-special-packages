@@ -39,5 +39,9 @@ domain=$(uci get gluon.core.domain)
 #Dienste, welche wir bei FF KBU nicht verwenden
  /etc/init.d/gluon-radvd disable
  /etc/init.d/gluon-radvd stop
-/etc/init.d/firewall disable
+
+#Und Firewallconfig austauschen
 /etc/init.d/firewall stop
+mv /etc/config/firewall /etc/config/firewall.gluon
+cp /etc/config/firewall.ffkbu /etc/config/firewall
+/etc/init.d/firewall start
