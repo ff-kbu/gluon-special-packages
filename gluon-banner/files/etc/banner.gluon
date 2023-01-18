@@ -28,6 +28,7 @@
  gluon-enter-setup-mode //  Neustart im Konfig-Modus
  Hood wechseln : gluon-switch-domain ffkbu_hood_bonn
                : gluon-switch-domain ffkbu_hood_umland
+ Hood aktuell  : uci get gluon.core.domain
     
 Mehr auf 
 https://kbu.freifunk.net/wiki/index.php?title=Pimp_my_Node
