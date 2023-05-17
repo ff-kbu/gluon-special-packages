@@ -196,7 +196,7 @@ config zone 'wired_mesh'
 	option input 'REJECT'
 	option forward 'REJECT'
 	option output 'ACCEPT'
-	list network 'mesh_lan'
+	list network 'mesh_other'
 
 config rule 'wired_mesh_ICMPv6_in'
 	option src 'wired_mesh'
