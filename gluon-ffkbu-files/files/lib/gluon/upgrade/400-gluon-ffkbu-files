@@ -41,8 +41,9 @@ domain=$(uci get gluon.core.domain)
  /etc/init.d/gluon-radvd disable
  /etc/init.d/gluon-radvd stop
 
-#Und Firewallconfig austauschen
-/etc/init.d/firewall stop
-mv /etc/config/firewall /etc/config/firewall.gluon
-cp /etc/config/firewall.ffkbu /etc/config/firewall
-/etc/init.d/firewall start
+# Und Firewallconfig austauschen
+# testweise deaktiviert, nicht klar warum wir nicht nur mit den default regeln arbeiten können
+#/etc/init.d/firewall stop
+#mv /etc/config/firewall /etc/config/firewall.gluon
+#cp /etc/config/firewall.ffkbu /etc/config/firewall
+#/etc/init.d/firewall start
